@@ -43,9 +43,9 @@ add_action( 'wp_enqueue_scripts', 'threesugars_styles' );
 /* Register Menus
 ---------------------------------------------------------------*/
 register_nav_menus(
-    array(
-        'main_menu' => 'Main Menu'
-    )
+  array(
+    'main_menu' => 'Main Menu'
+  )
 );
 
 
@@ -53,20 +53,20 @@ register_nav_menus(
 /* Custom Post Types
 ---------------------------------------------------------------*/
 function portfolio_register() {
-    $args = array(
-        'label' => __('Portfolio'),
-        'singular_label' => __('Portfolio'),
-        'public' => true,
-        'show_ui' => true,
-        'capability_type' => 'post',
-        'hierarchical' => true,
-        'rewrite' => true,
-        'menu_position' => 100,
-        'has_archive' => true,
-        'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'excerpt'),
-    );
+  $args = array(
+    'label' => __('Portfolio'),
+    'singular_label' => __('Portfolio'),
+    'public' => true,
+    'show_ui' => true,
+    'capability_type' => 'post',
+    'hierarchical' => true,
+    'rewrite' => true,
+    'menu_position' => 100,
+    'has_archive' => true,
+    'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'excerpt'),
+  );
 
-    register_post_type('portfolio', $args);
+  register_post_type('portfolio', $args);
 }
 add_action('init', 'portfolio_register');
 
@@ -76,11 +76,11 @@ add_action('init', 'portfolio_register');
 ---------------------------------------------------------------*/
 
 function latest_posts_of_type($type, $limit = -1, $order = 'date', $ord = 'DESC') {
-    return new WP_Query(array(
-        "posts_per_page" => $limit,
-        "post_type" => "$type",
-        "orderby" => $order,
-        "order" => $ord
-    ));
+  return new WP_Query(array(
+    "posts_per_page" => $limit,
+    "post_type" => "$type",
+    "orderby" => $order,
+    "order" => $ord
+  ));
 }
 

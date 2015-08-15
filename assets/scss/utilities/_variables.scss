@@ -1,8 +1,15 @@
 // ==================================================================
-// UTILITIES
+// VARIABLES
 // ------------------------------------------------------------------
-// Variables, Mixins, Functions etc...
+// All variable declarations go here
 // ==================================================================
 
-@import "variables";
-@import "mixins";
+// Generic colors
+$white: #FFF;
+
+$black: #333;
+
+$grey: #ADADAD;
+
+// Theme-specific colors
+$themeColor1: #45386A;
