@@ -5,8 +5,24 @@
 // Anything not in a plugin gets included here
 // ==================================================================
 
-@import "utilities/index";
+// 01. Utilities
+// ------------------------------------------------------------------
+@import "utilities/variables";
+@import "utilities/mixins";
+
+// 02. Base
+// ------------------------------------------------------------------
 @import "base/base";
-@import "libraries/index";
+@import "base/fonts";
+
+// 03. Libraries
+// ------------------------------------------------------------------
+// @import "libraries/index";
+
+// 04. Layout
+// ------------------------------------------------------------------
 @import "layout/layout";
-@import "modules/index";
+
+// 05. Modules
+// ------------------------------------------------------------------
+@import "modules/mast";

@@ -1,0 +1,82 @@
+// ==================================================================
+// MAST
+// ------------------------------------------------------------------
+// The Mast is the main header of the website
+// ==================================================================
+
+.mast {
+  position: relative;
+  padding: 60px 0;
+  color: $white;
+  text-align: center;
+  background: $black;
+
+  &:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.7;
+    background-position: 50% 0;
+    background: url(../images/header-bg.jpg) no-repeat;
+    background-size: cover;
+  }
+
+  // Ensure contents appear above background
+  .mast-logo,
+  .mast-heading,
+  .mast-subheading,
+  .mast-nav {
+    position: relative;
+    z-index: 2;
+  }
+
+  .mast-logo {
+    display: block;
+    margin: 0 auto;
+    width: 50px;
+    height: 50px;
+    text-indent: -999999px;
+    background: url(../images/icons/logo.svg) no-repeat center;
+  }
+
+  .mast-heading,
+  .mast-subheading {
+    line-height: 1;
+    text-transform: uppercase;
+  }
+
+  .mast-heading {
+    margin: 30px 0;
+    font-size: 2.8em;
+    font-weight: bolder;
+  }
+
+  .mast-subheading {
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-family: $fontSansSerif;
+    font-weight: lighter;
+  }
+
+  .mast-nav {
+    ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    li {
+      display: flex;
+      margin: 0 7.5px;
+    }
+
+    a {
+      @include button-variant($white, transparent, $white);
+      @include button-size(10px, 20px, 1em, 1, 4px);
+    }
+  }
+}

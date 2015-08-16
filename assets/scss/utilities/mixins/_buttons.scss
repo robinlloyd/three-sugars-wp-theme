@@ -1,0 +1,37 @@
+// ==================================================================
+// BUTTONS
+// ==================================================================
+
+// Button colours
+@mixin button-variant($text-color, $background-color, $border-color) {
+  color: $text-color;
+  background-color: $background-color;
+  border-width: 2px;
+  border-style: solid;
+  border-color: $border-color;
+  text-decoration: none;
+
+  &:hover,
+  &:focus,
+  &.focus,
+  &:active,
+  &.active {
+    color: darken($text-color, 15%);
+    background-color: darken($background-color, 10%);
+    border-color: darken($border-color, 15%);
+  }
+}
+
+// Button sizes
+@mixin button-size($padding-vertical, $padding-horizontal, $font-size, $line-height, $border-radius) {
+  padding: $padding-vertical $padding-horizontal;
+  font-size: $font-size;
+  line-height: $line-height;
+  border-radius: $border-radius;
+}
+
+@mixin reset-button-style {
+  padding: 0;
+  background: none;
+  border: none;
+}
