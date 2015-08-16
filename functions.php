@@ -12,7 +12,7 @@ add_theme_support( 'automatic-feed-links' );
 /*-------------------------------------------------------------*/
 /* Add Image Sizes
 ---------------------------------------------------------------*/
-add_image_size( "thumb", 400, 400, true );
+add_image_size( "archive-small", 220, 220, true );
 
 
 /*-------------------------------------------------------------*/
@@ -52,10 +52,10 @@ register_nav_menus(
 /*-------------------------------------------------------------*/
 /* Custom Post Types
 ---------------------------------------------------------------*/
-function portfolio_register() {
+function work_register() {
   $args = array(
-    'label' => __('Portfolio'),
-    'singular_label' => __('Portfolio'),
+    'label' => __('Work'),
+    'singular_label' => __('Work'),
     'public' => true,
     'show_ui' => true,
     'capability_type' => 'post',
@@ -66,9 +66,18 @@ function portfolio_register() {
     'supports' => array('title', 'editor', 'thumbnail', 'custom-fields', 'excerpt'),
   );
 
-  register_post_type('portfolio', $args);
+  register_post_type('work', $args);
+
+  register_taxonomy(
+    'project-type',
+    'work',
+    array(
+      'label' => __( 'Project Type' ),
+      'hierarchical' => false
+    )
+  );
 }
-add_action('init', 'portfolio_register');
+add_action('init', 'work_register');
 
 
 /*-------------------------------------------------------------*/

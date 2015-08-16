@@ -441,6 +441,19 @@ nav {
   }
 }
 
+/* Default paragraph styles
+   ========================================================================== */
+p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  margin-top: 15px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
 
 // ==================================================================
 // WordPress required styles

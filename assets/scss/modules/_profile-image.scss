@@ -1,0 +1,14 @@
+// ==================================================================
+// PROFILE IMAGE
+// ------------------------------------------------------------------
+// Profile image, used on home page to give users an idea of who I am
+// ==================================================================
+
+.profile-img {
+  width: 150px;
+  height: auto;
+  margin-bottom: 20px;
+  overflow: hidden;
+  border-radius: 50%;
+  box-shadow: rgba(0,0,0,0.1) 0 2px 2px;
+}

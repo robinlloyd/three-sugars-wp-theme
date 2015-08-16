@@ -1,0 +1,61 @@
+// ==================================================================
+// SQUARE INDEX
+// ------------------------------------------------------------------
+// Styles for a square, full-sized image repeatable block
+// ==================================================================
+
+.squaredIndex {
+  // Reset list styles
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.squaredIndex-cell {
+  position: relative;
+  margin: 0 10px;
+  border-radius: 2px;
+  background: $themeColor1;
+
+  &:hover {
+    .squaredIndex-cell-image {
+      opacity: 0.4;
+      transition: opacity, 0.3s;
+    }
+  }
+
+  a {
+    display: block;
+  }
+}
+
+.squaredIndex-cell-image {
+  opacity: 0.25;
+  line-height: 0;
+  transition: opacity, 0.3s;
+}
+
+.squaredIndex-cell-details {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: $white;
+  text-shadow: rgba(0,0,0,0.5) 0 1px 0;
+}
+
+.squaredIndex-cell-title {
+  font-family: $fontSansSerif;
+  font-weight: normal;
+  margin: 0;
+}
+
+.squaredIndex-cell-subtitle {
+  font-weight: lighter;
+  margin: 0;
+}

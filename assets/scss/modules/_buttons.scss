@@ -1,0 +1,13 @@
+// ==================================================================
+// BUTTONS
+// ==================================================================
+
+.btn {
+  display: inline-block;
+  font-weight: normal;
+  @include button-size(10px, 20px, 1em, 1, 4px);
+}
+
+.btn--primary {
+  @include button-variant($themeColor1, transparent, $themeColor1);
+}

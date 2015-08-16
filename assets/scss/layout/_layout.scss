@@ -3,3 +3,43 @@
 // ------------------------------------------------------------------
 // Styles for main layout components such as header, footer, sidebar
 // ==================================================================
+
+// Main wrap
+.wrap {
+  margin: 0 auto;
+  max-width: 1024px;
+}
+.wrap--small {
+  max-width: 650px;
+}
+
+
+// Content blocks (mainly for padding)
+.contentBlock {
+  padding: 60px 0;
+  border-bottom: $greyLight 2px dashed;
+}
+.contentBlock--center-align {
+  text-align: center;
+}
+
+.contentBlock-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: $themeColor1;
+  text-transform: uppercase;
+  font-size: 2.2em;
+  line-height: 1;
+
+  + .contentBlock-subtitle {
+    margin-top: -10px;
+  }
+}
+
+.contentBlock-subtitle {
+  margin-top: 0;
+  color: $grey;
+  font-family: $fontSansSerif;
+  font-size: 1.2em;
+  font-weight: normal;
+}
