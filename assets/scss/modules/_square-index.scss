@@ -4,7 +4,7 @@
 // Styles for a square, full-sized image repeatable block
 // ==================================================================
 
-.squaredIndex {
+.squared-index {
   // Reset list styles
   list-style: none;
   margin: 0;
@@ -15,16 +15,15 @@
   margin-top: 50px;
 }
 
-.squaredIndex-cell {
+.squared-index__cell {
   position: relative;
   margin: 0 10px;
   border-radius: 2px;
   background: $themeColor1;
 
   &:hover {
-    .squaredIndex-cell-image {
+    .squared-index__cell-image {
       opacity: 0.4;
-      transition: opacity, 0.3s;
     }
   }
 
@@ -33,13 +32,12 @@
   }
 }
 
-.squaredIndex-cell-image {
+.squared-index__cell-image {
   opacity: 0.25;
   line-height: 0;
-  transition: opacity, 0.3s;
 }
 
-.squaredIndex-cell-details {
+.squared-index__cell-details {
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -49,13 +47,13 @@
   text-shadow: rgba(0,0,0,0.5) 0 1px 0;
 }
 
-.squaredIndex-cell-title {
+.squared-index__cell-title {
   font-family: $fontSansSerif;
   font-weight: normal;
   margin: 0;
 }
 
-.squaredIndex-cell-subtitle {
+.squared-index__cell-subtitle {
   font-weight: lighter;
   margin: 0;
 }

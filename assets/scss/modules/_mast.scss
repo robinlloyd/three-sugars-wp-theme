@@ -27,15 +27,15 @@
   }
 
   // Ensure contents appear above background
-  .mast-logo,
-  .mast-heading,
-  .mast-subheading,
-  .mast-nav {
+  .mast__logo,
+  .mast__heading,
+  .mast__subheading,
+  .mast__nav {
     position: relative;
     z-index: 2;
   }
 
-  .mast-logo {
+  .mast__logo {
     display: block;
     margin: 0 auto;
     width: 50px;
@@ -44,25 +44,25 @@
     background: url(../images/icons/logo.svg) no-repeat center;
   }
 
-  .mast-heading,
-  .mast-subheading {
+  .mast__heading,
+  .mast__subheading {
     line-height: 1;
     text-transform: uppercase;
   }
 
-  .mast-heading {
+  .mast__heading {
     margin: 30px 0;
     font-size: 2.8em;
   }
 
-  .mast-subheading {
+  .mast__subheading {
     margin-top: 0;
     margin-bottom: 30px;
     font-family: $fontSansSerif;
     font-weight: 100;
   }
 
-  .mast-nav {
+  .mast__nav {
     ul {
       display: flex;
       justify-content: center;

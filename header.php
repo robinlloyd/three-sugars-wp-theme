@@ -15,13 +15,13 @@
 
 <body <?php body_class(); ?>>
   <header class="mast">
-    <h2 class="mast-logo">Robin Lloyd</h2>
+    <h2 class="mast__logo">Robin Lloyd</h2>
 
-    <h2 class="mast-heading">Three Sugars</h2>
+    <h2 class="mast__heading">Three Sugars</h2>
 
-    <h3 class="mast-subheading">I'm a front-end developer, gamer, otaku and occasionally a wizard</h3>
+    <h3 class="mast__subheading">I'm a front-end developer, gamer, otaku and occasionally a wizard</h3>
 
-    <nav class="mast-nav">
+    <nav class="mast__nav">
       <?php wp_nav_menu( array('menu' => 'Main Menu' )); ?>
     </nav>
   </header>

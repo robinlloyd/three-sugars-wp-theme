@@ -15,15 +15,19 @@
 
 
 // Content blocks (mainly for padding)
-.contentBlock {
+.content-block {
   padding: 60px 0;
   border-bottom: $greyLight 2px dashed;
+
+  &:last-of-type {
+    border-bottom: none;
+  }
 }
-.contentBlock--center-align {
+.content-block--center-align {
   text-align: center;
 }
 
-.contentBlock-title {
+.content-block__title {
   margin-top: 0;
   margin-bottom: 10px;
   color: $themeColor1;
@@ -31,12 +35,12 @@
   font-size: 2.2em;
   line-height: 1;
 
-  + .contentBlock-subtitle {
+  + .content-block__subtitle {
     margin-top: -10px;
   }
 }
 
-.contentBlock-subtitle {
+.content-block__subtitle {
   margin-top: 0;
   color: $grey;
   font-family: $fontSansSerif;
