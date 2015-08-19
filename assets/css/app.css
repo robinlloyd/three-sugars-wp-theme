@@ -728,3 +728,14 @@ h1, h2, h3 {
 .description-index__cell-excerpt p:first-of-type {
   margin-top: 10px;
 }
+
+.site-footer {
+  padding: 15px;
+  color: #FFF;
+  text-align: center;
+  font-size: 0.7em;
+  background: #45386A;
+}
+.site-footer p {
+  margin: 0;
+}

@@ -1,0 +1,17 @@
+// ==================================================================
+// SITE FOOTER
+// ------------------------------------------------------------------
+// Site footer. Links to experiment page, github etc.
+// ==================================================================
+
+.site-footer {
+  padding: 15px;
+  color: $white;
+  text-align: center;
+  font-size: 0.7em;
+  background: $themeColor1;
+
+  p {
+    margin: 0;
+  }
+}
