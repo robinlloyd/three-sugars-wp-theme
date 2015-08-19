@@ -739,3 +739,28 @@ h1, h2, h3 {
 .site-footer p {
   margin: 0;
 }
+
+.pagination {
+  display: block;
+  padding: 20px;
+  text-align: center;
+}
+.pagination a {
+  display: inline-block;
+  margin: 0 5px;
+  color: #45386A;
+  background-color: transparent;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #45386A;
+  text-decoration: none;
+  transition: background 0.2s;
+  padding: 10px 20px;
+  font-size: 1em;
+  line-height: 1;
+  border-radius: 4px;
+}
+.pagination a:hover, .pagination a:focus, .pagination a.focus, .pagination a:active, .pagination a.active {
+  background: rgba(69, 56, 106, 0.1);
+  transition: background 0.2s;
+}

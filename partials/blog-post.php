@@ -5,9 +5,11 @@
 
       <li class="description-index__cell">
         <a href="<?php the_permalink(); ?>">
-          <div class="description-index__cell-image">
-            <?php the_post_thumbnail('archive-small'); ?>
-          </div>
+          <?php if (has_post_thumbnail()) : ?>
+            <div class="description-index__cell-image">
+              <?php the_post_thumbnail('archive-small'); ?>
+            </div>
+          <?php endif; ?>
 
           <div class="description-index__cell-details">
             <h3 class="description-index__cell-title"><?php the_title(); ?></h3>
