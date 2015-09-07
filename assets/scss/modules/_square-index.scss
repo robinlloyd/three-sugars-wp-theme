@@ -24,6 +24,7 @@
   &:hover {
     .squared-index__cell-image {
       opacity: 0.4;
+      transition: opacity 0.3s;
     }
   }
 
@@ -33,6 +34,7 @@
 }
 
 .squared-index__cell-image {
+  transition: opacity 0.3s;
   opacity: 0.25;
   line-height: 0;
 }

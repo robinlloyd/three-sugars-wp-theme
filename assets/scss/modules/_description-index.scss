@@ -19,8 +19,10 @@
   margin-bottom: 60px;
 
   &:hover {
-    img {
+    .description-index__cell-image,
+    .description-index__cell-title {
       opacity: 0.4;
+      transition: opacity 0.3s;
     }
   }
 }
@@ -33,6 +35,8 @@
   border-radius: 50%;
   overflow: hidden;
   background: $themeColor1;
+  opacity: 1;
+  transition: opacity 0.3s;
 
   img {
     width: 80px;
@@ -57,10 +61,8 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-
-  &:hover {
-    opacity: 0.4;
-  }
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .description-index__cell-date {

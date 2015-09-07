@@ -627,12 +627,14 @@ h1, h2, h3 {
 }
 .squared-index__cell:hover .squared-index__cell-image {
   opacity: 0.4;
+  transition: opacity 0.3s;
 }
 .squared-index__cell a {
   display: block;
 }
 
 .squared-index__cell-image {
+  transition: opacity 0.3s;
   opacity: 0.25;
   line-height: 0;
 }
@@ -677,8 +679,10 @@ h1, h2, h3 {
   text-align: left;
   margin-bottom: 60px;
 }
-.description-index__cell:hover img {
+.description-index__cell:hover .description-index__cell-image,
+.description-index__cell:hover .description-index__cell-title {
   opacity: 0.4;
+  transition: opacity 0.3s;
 }
 
 .description-index__cell-image {
@@ -689,6 +693,8 @@ h1, h2, h3 {
   border-radius: 50%;
   overflow: hidden;
   background: #45386A;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 .description-index__cell-image img {
   width: 80px;
@@ -712,9 +718,8 @@ h1, h2, h3 {
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
-}
-.description-index__cell-title:hover {
-  opacity: 0.4;
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 
 .description-index__cell-date {
