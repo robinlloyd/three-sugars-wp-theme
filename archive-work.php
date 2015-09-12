@@ -1,4 +1,4 @@
-<?php get_header(); ?>
+<?php get_header('small'); ?>
 
   <section class="content-block content-block--center-align">
     <h1 class="content-block__title">Work</h1>

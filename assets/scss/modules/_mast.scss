@@ -26,6 +26,30 @@
     background-size: cover;
   }
 
+  &.mast--small {
+    padding: 40px 0;
+  }
+
+  .mast__logo-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+
+    .mast__logo {
+      margin: 0;
+      margin-right: 10px;
+    }
+
+    .mast__heading {
+      margin: 10px 0;
+      font-size: 2.2em;
+    }
+
+    .mast__subheading {
+      margin-bottom: 20px;
+    }
+  }
+
   // Ensure contents appear above background
   .mast__logo,
   .mast__heading,

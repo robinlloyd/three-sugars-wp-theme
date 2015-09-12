@@ -24,8 +24,8 @@ module.exports = function(grunt) {
             },
             others: {
                 files: [
-                    '*.html',
-                    '*.php',
+                    '**/*.html',
+                    '**/*.php',
                     'assets/images/**/*.{png,jpg,jpeg,gif,webp,svg}'
                 ],
                 tasks: ['watch']
